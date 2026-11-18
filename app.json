@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "NOOK",
+    "slug": "nook",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "nook",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "bundleIdentifier": "com.nook.gallery",
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.nook.gallery",
+      "permissions": [],
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#3B6FE0",
+          "image": "./assets/images/icon.png",
+          "imageWidth": 120
+        }
+      ],
+      "expo-video",
+      "expo-sharing",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
